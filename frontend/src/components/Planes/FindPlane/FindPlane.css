@@ -1,0 +1,53 @@
+.header-menu {
+    background-color: #505050;
+    color: #fff;
+    height: 2vh;
+    width: 100%;
+    padding: 1.5vh 0;
+    height:100%;
+    border-radius: 9px 9px 0 0; 
+}
+
+.plane-class{
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    display:flex;
+    gap:2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.plane-class a{
+    margin: 0.5vh 1vw;
+    font-weight: 500;
+    color: #fff;
+        
+    
+}
+
+.plane-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.plane-link:hover {
+    font-weight: normal;
+}
+
+.plane-link::before{
+    content: ''; /* Псевдоэлементы требуют свойство content */
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    bottom: 0; /* Расположение у нижнего края родительского элемента */
+    right: 0; /* Начало с левого края родительского элемента */
+    width: 100%; /* Полная ширина родительского элемента */
+    height: 2px; /* Высота полосы */
+    background-color: #fff; /* Цвет полосы */
+    transform: scaleX(0); /* Начальное масштабирование полосы до 0 */
+    transform-origin: bottom right; /* Точка трансформации - левый нижний угол */
+    transition: transform 0.5s ease-in-out; /* Анимация трансформации */
+}
+
+.plane-link:hover::before{
+    transform: scaleX(1); /* При наведении масштабируем полосу до полной ширины */
+}

@@ -1,0 +1,18 @@
+body {
+  font-family: "M PLUS 1 Code", monospace;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 10vw;
+}
+

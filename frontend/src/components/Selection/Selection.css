@@ -1,0 +1,18 @@
+.sel-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: auto;
+}
+
+.sel-img {
+    height: 25vh;
+    width: 10vw;
+}

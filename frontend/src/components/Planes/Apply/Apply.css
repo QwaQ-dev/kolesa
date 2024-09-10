@@ -1,0 +1,35 @@
+.apply-menu {
+    background-color: #505050;
+    color: #fff;
+    height: 2vh;
+    width: 100%;
+    padding: 1.5vh 0;
+    height:100%;
+    border-radius: 0 0 9px 9px;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.apply {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    box-shadow: none;
+    padding: 1vh 1vw;
+    border-radius: 6px;
+}
+
+.amount {
+    text-decoration: none;
+    color: #000;
+}
+
+.apply:hover .amount {
+    color: #fff;
+}
+
+.apply:hover {
+    color: #fff;
+    background-color: #838282;
+}

@@ -1,0 +1,66 @@
+.where-to-find {
+    display: flex;
+    gap: 20px;
+}
+
+.left-side a{
+    font-weight: normal;
+    color: #fff;
+    font-size:17px;
+    text-decoration: none;
+    position:relative
+}
+
+.left-side a:hover{
+    font-weight: bold;
+    color: #5c5b5b;
+    font-size: 17px;
+    text-decoration: underline;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.left-side a:first-child{
+    padding-bottom: 1px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.left-side a:last-child{
+    padding-bottom: 1px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.left-side a:active{
+    background-color: #fff;
+}
+
+.left-side a:hover::after{
+    transform: scaleX(1);
+}
+
+.left-side a::after{
+    content: ''; /* Псевдоэлементы требуют свойство content */
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    bottom: 0; /* Расположение у нижнего края родительского элемента */
+    left: 0; /* Начало с левого края родительского элемента */
+    width: 100%; /* Полная ширина родительского элемента */
+    height: 2px; /* Высота полосы */
+    background-color: #898f95; /* Цвет полосы */
+    transform: scaleX(0); /* Начальное масштабирование полосы до 0 */
+    transform-origin: bottom left; 
+    transition: transfßorm 0.5s ease-in-out; 
+}
+
+.auto-brand {
+    margin-top: 2vh;
+    display: flex;
+    gap: 20px;
+}
+
+.auto-quality {
+    margin-top: 2vh;
+    display: flex;
+    gap: 20px;
+}

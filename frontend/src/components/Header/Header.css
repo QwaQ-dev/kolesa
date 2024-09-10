@@ -1,0 +1,93 @@
+.header{
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo{ 
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header-links{
+    display:flex;
+    gap: 2vw;
+}
+
+.header-link{
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    display: inline-block; 
+    font-weight: bold;
+}
+
+.btn-with-icon{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;   
+    background-color: #fff;
+}
+
+
+.btn-with-icon svg{
+    height: 1em;
+}
+
+.btn-with-icon span{
+    font-weight: bold;
+    margin: 10px 0px;
+    position: relative; /* Относительное позиционирование для базового элемента */
+    display: inline-block; 
+}
+
+.btn-with-icon span:hover::after{
+    transform: scaleX(1); /* При наведении масштабируем полосу до полной ширины */
+
+}
+
+.btn-with-icon span:hover{
+    font-weight: normal;
+    transition:  font-weight 0.7s; 
+}
+.btn-with-icon span::after{
+    content: ''; /* Псевдоэлементы требуют свойство content */
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    bottom: 0; /* Расположение у нижнего края родительского элемента */
+    left: 0; /* Начало с левого края родительского элемента */
+    width: 100%; /* Полная ширина родительского элемента */
+    height: 2px; /* Высота полосы */
+    background-color: #2A81DD; /* Цвет полосы */
+    transform: scaleX(0); /* Начальное масштабирование полосы до 0 */
+    transform-origin: bottom left; 
+    transition: transform 0.5s ease-in-out; 
+
+}
+
+.header-link:hover {
+    color: #505050;
+    font-weight: normal;
+}
+
+.header-link::after{
+    content: ''; /* Псевдоэлементы требуют свойство content */
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    bottom: 0; /* Расположение у нижнего края родительского элемента */
+    left: 0; /* Начало с левого края родительского элемента */
+    width: 100%; /* Полная ширина родительского элемента */
+    height: 2px; /* Высота полосы */
+    background-color: #505050; /* Цвет полосы */
+    transform: scaleX(0); /* Начальное масштабирование полосы до 0 */
+    transform-origin: bottom left; /* Точка трансформации - левый нижний угол */
+    transition: transform 0.5s ease-in-out; /* Анимация трансформации */
+}
+
+.header-link:hover::after{
+    transform: scaleX(1); /* При наведении масштабируем полосу до полной ширины */
+}
+

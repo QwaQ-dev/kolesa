@@ -1,0 +1,14 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+    flex-wrap: wrap;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+

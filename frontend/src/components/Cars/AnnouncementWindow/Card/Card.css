@@ -1,0 +1,47 @@
+.card {
+    padding: 1vh 1vw;
+    color: #fff;
+    text-align: center;
+    margin: 5vh 3vw;
+    width: 30vh;
+    height: 40vh;
+    background-color: #505050;
+    border-radius: 20px;
+}
+
+.main-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img {
+    border-radius: 15px;
+    width: 15vw;
+    max-width: 70%; /* Сохраняем максимальную ширину изображения равной ширине контейнера */
+    max-height: 70%;    /* Сохраняем максимальную высоту изображения равной высоте контейнера */
+    object-fit: contain; /* Сохраняем пропорции изображения, заполняя контейнер */
+}
+
+.card-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-price {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.card-show {
+    background-color: #fff;
+    box-shadow: none;
+    padding: 1vh 1vw;
+    border-radius: 6px;
+}
+
+.card-show:hover {
+    color: #fff;
+    background-color: #838282;
+}
